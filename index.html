@@ -1,67 +1,216 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matías Mazzone - Refrigeración</title>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
-    <!-- CSS -->
-    <link rel="stylesheet" href="./style.css"> </head>
-    <!-- Icono Bootstrap -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
 <body>
 
-<header id="main-header"> 
-    <div class="logo-header">
-        <strong>MATÍAS</strong> <span>MAZZONE</span>
-    </div>
-    <nav class="link-header">
-        <a href="#inicio" class="link-nav">INICIO</a>
-        <a href="#servicios" class="link-nav">SERVICIOS</a>
-        <a href="#contacto" class="link-nav">CONTACTO</a>
+    <!-- HEADER -->
+    <header class="encabezado" id="encabezado">
+        <a href="#inicio" class="logo-contenedor" aria-label="Inicio">
+            <img src="./Fotos/logo.jpg" alt="Logo Matías Mazzone" class="logo-imagen">
+    
+            <div class="logo-texto">
+                <strong>MATÍAS MAZZONE</strong>
+            </div>
+        </a>
+
+        <!-- Nav escritorio -->
+        <nav class="nav-escritorio" aria-label="Navegación principal">
+            <a href="#inicio">Inicio</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#trabajos">Trabajos</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+
+        <!-- Botón hamburguesa celular-->
+        <button class="btn-menu" id="btn-menu" aria-label="Abrir menú" aria-expanded="false">
+            <i class="bi bi-list" id="icono-menu"></i>
+        </button>
+    </header>
+
+    <!-- Nav celular -->
+    <nav class="nav-movil" id="nav-movil" aria-label="Menú móvil">
+        <a href="#inicio" class="link-movil">Inicio</a>
+        <a href="#servicios" class="link-movil">Servicios</a>
+        <a href="#trabajos" class="link-movil">Trabajos</a>
+        <a href="#contacto" class="link-movil">Contacto</a>
     </nav>
-  
-</header>
 
-<!-- SECCION PRINCIPAL  -->
- <main>
-<section class="hero" id="inicio">
-    <h1>Cuidamos el aire que respirás</h1>
-    <h2>Instalación y mantenimiento de aire acondicionado</h2>
-    <p>Técnico Matriculado - Service Oficial en Zona Oeste</p>
-    <a href="https://wa.me/3437408119" class="btn-presupuesto">PEDIR PRESUPUESTO</a>
-</section>
+    <!-- MAIN -->
+    <main>
 
-<section class="servicios" id="servicios">
-    <div class="card">
-        <h3>Instalación</h3>
-        <p>Equipos Split y centrales. Garantía escrita y prolijidad absoluta en el montaje.</p>
+        <!-- HERO -->
+        <section class="hero" id="inicio" aria-label="Sección principal">
+            <div class="hero-contenido">
+                <span class="hero-badge">Técnico Matriculado · Zona Oeste</span>
+                <h1>Cuidamos el aire que respirás</h1>
+                <h2>Instalación y mantenimiento de aire acondicionado</h2>
+                <p>Service oficial · Garantía escrita · Atención personalizada</p>
+                <a href="https://wa.me/3437408119?text=Hola%20Mat%C3%ADas%2C%20quiero%20pedir%20un%20presupuesto."
+                    class="btn-presupuesto" target="_blank" rel="noopener noreferrer"> PEDIR PRESUPUESTO
+                </a>
+            </div>
+        </section>
+
+        <!-- SERVICIOS -->
+        <section class="servicios" id="servicios" aria-label="Nuestros servicios">
+            <div class="titulo-seccion">
+                <h2>Nuestros Servicios</h2>
+                <p>Soluciones profesionales para tu hogar o empresa</p>
+                <span class="linea-decorativa" aria-hidden="true"></span>
+            </div>
+
+            <div class="grilla-cards">
+
+                <article class="tarjeta">
+                    <div class="tarjeta-icono" aria-hidden="true">
+                        <i class="bi bi-tools"></i>
+                    </div>
+                    <h3>Instalación</h3>
+                    <p>Instalamos equipos Split y centrales con garantía escrita y prolijidad total en el montaje.</p>
+                    <div class="tarjeta-detalle">
+                        <span><i class="bi bi-check-circle-fill"></i> Equipos Split y multisplit</span>
+                        <span><i class="bi bi-check-circle-fill"></i> Garantía escrita</span>
+                        <span><i class="bi bi-check-circle-fill"></i> Trabajo ordenado y limpio</span>
+                    </div>
+                </article>
+
+                <article class="tarjeta">
+                    <div class="tarjeta-icono" aria-hidden="true">
+                        <i class="bi bi-wrench-adjustable"></i>
+                    </div>
+                    <h3>Reparación</h3>
+                    <p>Diagnóstico y solución de fallas eléctricas, cambio de compresores y capacitores.</p>
+                    <div class="tarjeta-detalle">
+                        <span><i class="bi bi-check-circle-fill"></i> Fallas eléctricas</span>
+                        <span><i class="bi bi-check-circle-fill"></i> Cambio de compresores</span>
+                        <span><i class="bi bi-check-circle-fill"></i> Cambio de capacitores</span>
+                    </div>
+                </article>
+
+                <article class="tarjeta">
+                    <div class="tarjeta-icono" aria-hidden="true">
+                        <i class="bi bi-wind"></i>
+                    </div>
+                    <h3>Carga de Gas</h3>
+                    <p>Control de presión y recarga de refrigerante para un enfriamiento óptimo y eficiente.</p>
+                    <div class="tarjeta-detalle">
+                        <span><i class="bi bi-check-circle-fill"></i> Control de presión</span>
+                        <span><i class="bi bi-check-circle-fill"></i> Recarga de refrigerante</span>
+                        <span><i class="bi bi-check-circle-fill"></i> Diagnóstico sin cargo</span>
+                    </div>
+                </article>
+
+                <article class="tarjeta">
+                    <div class="tarjeta-icono" aria-hidden="true">
+                        <i class="bi bi-shield-check"></i>
+                    </div>
+                    <h3>Mantenimiento</h3>
+                    <p>Limpieza y revisión periódica para prolongar la vida útil de tu equipo y ahorrar energía.</p>
+                    <div class="tarjeta-detalle">
+                        <span><i class="bi bi-check-circle-fill"></i> Limpieza de filtros</span>
+                        <span><i class="bi bi-check-circle-fill"></i> Revisión completa</span>
+                        <span><i class="bi bi-check-circle-fill"></i> Ahorro de energía</span>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- TRABAJOS -->
+        <section class="trabajos" id="trabajos" aria-label="Galería de trabajos realizados">
+            <div class="titulo-seccion">
+                <h2>Trabajos Realizados</h2>
+                <p>Instalaciones y reparaciones en hogares y empresas de la zona</p>
+                <span class="linea-decorativa" aria-hidden="true"></span>
+            </div>
+
+            <div class="grilla-fotos" id="grilla-fotos">
+
+                <!-- FOTO 1 -->
+                <div class="foto-trabajo" onclick="abrirLightbox(this.querySelector('img').src)">
+                    <img src="./Fotos/img-1.jpg" alt="Instalación split comedor" loading="lazy">
+                    <div class="overlay-foto">
+                        <p>Instalación split comedor</p>
+                    </div>
+                </div>
+
+                <!-- FOTO 2 -->
+                <div class="foto-trabajo" onclick="abrirLightbox(this.querySelector('img').src)">
+                    <img src="./Fotos/img-2.jpg" alt="Carga de gas" loading="lazy">
+                    <div class="overlay-foto">
+                        <p>Carga de gas</p>
+                    </div>
+                </div>
+
+                <!-- FOTO 3 -->
+                <div class="foto-trabajo" onclick="abrirLightbox(this.querySelector('img').src)">
+                    <img src="./Fotos/img-3.jpg" alt="Trabajo realizado" loading="lazy">
+                    <div class="overlay-foto">
+                        <p>Trabajo realizado</p>
+                    </div>
+                </div>
+
+                <!-- FOTO 4 -->
+                <div class="foto-trabajo" onclick="abrirLightbox(this.querySelector('img').src)">
+                    <img src="./Fotos/img-4.jpg" alt="Trabajo realizado" loading="lazy">
+                    <div class="overlay-foto">
+                        <p>Trabajo realizado</p>
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- FIN grilla-fotos -->
+
+        </section>
+        <!-- Input oculto para seleccionar archivos -->
+        <input type="file" id="input-foto" accept="image/*" multiple aria-label="Seleccionar imágenes">
+        </section>
+
+        <!-- CONTACTO -->
+        <section class="contacto" id="contacto" aria-label="Sección de contacto">
+            <h2>¿TU AIRE NO ENFRÍA?</h2>
+            <p>Escribime ahora y coordinamos una visita técnica sin cargo.</p>
+            <a href="https://wa.me/3437408119?text=Hola%20Mat%C3%ADas%2C%20quiero%20pedir%20un%20presupuesto."
+                class="btn-whatsapp-escritorio" target="_blank" rel="noopener noreferrer"
+                aria-label="Contactar por WhatsApp">
+                <i class="bi bi-whatsapp" aria-hidden="true"></i>
+                +54 3437 408119
+            </a>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="pie-pagina">
+        © 2026 · Desarrollado por Micaela Mazza
+    </footer>
+
+    <!-- Botón flotante WhatsApp (solo /tablet) -->
+    <a href="https://wa.me/3437408119?text=Hola%20Mat%C3%ADas%2C%20quiero%20pedir%20un%20presupuesto."
+        class="wpp-flotante" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+        <i class="bi bi-whatsapp" aria-hidden="true"></i>
+    </a>
+
+
+    <!-- Lightbox para fotos -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Vista de imagen">
+        <button class="btn-cerrar-lightbox" id="btn-cerrar-lightbox" aria-label="Cerrar imagen">&times;</button>
+        <img src="" alt="Foto ampliada" id="lightbox-img">
     </div>
-    <div class="card">
-        <h3>Reparación</h3>
-        <p>Solución de fallas eléctricas, cambio de compresores y capacitores.</p>
-    </div>
-    <div class="card">
-        <h3>Carga de Gas</h3>
-        <p>Control de presión y recarga de refrigerante para un enfriamiento óptimo.</p>
-    </div>
-</section>
 
-<section class="contacto" id="contacto">
-    <h2>¿TU AIRE NO ENFRÍA?</h2>
-    <p>Escribime ahora mismo y coordinamos una visita técnica.</p>
-  <a href="https://wa.me/3437408119?text=Hola%20Matías,%20quiero%20pedir%20un%20presupuesto." 
-   class="whatsapp" 
-   target="_blank" 
-   rel="noopener noreferrer"> <i class="bi bi-whatsapp icono-wpp"></i> 
-    +54 3437 408119
-</a>
-</section>
-</main>
-<!-- FOOTER -->
-<footer class="footer-main">
-    © 2026 - Micaela Mazza
-</footer>
+    <!-- Enlace a JS -->
+    <script src="./script.js"></script>
+</body>
 
-<script src="script.js"></script> </body>
 </html>
